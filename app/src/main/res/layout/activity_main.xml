@@ -8,25 +8,16 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="git branch -r&#xA;" />
-
-    <TextView
-        android:layout_width="55dp"
-        android:layout_height="4dp"
+        android:id="@+id/textView3"
+        android:layout_width="279dp"
+        android:layout_height="86dp"
         android:text="Hola Sebitas"
-        android:textSize="96sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="git branch&#xA;" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
