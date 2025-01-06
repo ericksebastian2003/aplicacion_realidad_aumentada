@@ -7,17 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="279dp"
-        android:layout_height="86dp"
-        android:text="Hola Sebitas"
-        android:textSize="34sp"
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="193dp"
+        android:layout_height="69dp"
+        android:text="Ir a la siguiente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.339"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
