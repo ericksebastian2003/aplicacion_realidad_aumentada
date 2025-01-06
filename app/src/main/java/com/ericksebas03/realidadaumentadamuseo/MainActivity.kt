@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.ericksebas03.splashscreen.SplashActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,9 +14,9 @@ class MainActivity : AppCompatActivity() {
         val btnIrA = findViewById<Button>(R.id.btn_1)
 
         btnIrA.setOnClickListener {
-            // Crear un Intent para iniciar Respuesta1Activity
-            val intent = Intent(this, Respuesta1Activity::class.java)
-            // Iniciar Respuesta1Activity
+            // Crear un Intent para iniciar SplashActivity
+            val intent = Intent(this, SplashActivity::class.java)
+            // Iniciar SplashActivity
             startActivity(intent)
         }
     }

@@ -19,11 +19,17 @@
         android:theme="@style/Theme.RealidadAumentadaMuseo"
         tools:targetApi="31">
         <activity
-            android:name=".Respuesta1Activity"
+            android:name="com.ericksebas03.respuestas.Respuesta1Activity"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name="com.ericksebas03.adivinanzas.Adivinanza1Activity"
             android:exported="false" />
+        <activity
+            android:name="com.ericksebas03.splashScreens.SplashActivity"
+            android:exported="false">
+        </activity>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
