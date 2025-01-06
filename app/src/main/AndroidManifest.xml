@@ -18,27 +18,57 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RealidadAumentadaMuseo"
         tools:targetApi="31">
+
+        <!-- Respuesta1Activity -->
         <activity
             android:name="com.ericksebas03.respuestas.Respuesta1Activity"
-            android:exported="false" />
-        <activity
-            android:name="com.ericksebas03.adivinanzas.Adivinanza1Activity"
-            android:exported="false" />
-        <activity
-            android:name="com.ericksebas03.splashScreens.SplashActivity"
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ericksebas03.respuestas.ACTION_RESPUESTA1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
+        <!-- Adivinanza1Activity -->
+        <activity
+            android:name="com.ericksebas03.adivinanzas.Adivinanza1Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ericksebas03.adivinanzas.ACTION_ADIVINANZA1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
+        <!-- SplashActivity -->
+        <activity
+            android:name="com.ericksebas03.splashscreen.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ericksebas03.splashscreen.ACTION_SPLASH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Splash2Activity -->
+        <activity
+            android:name="com.ericksebas03.splashscreen.Splash2Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ericksebas03.splashscreen.ACTION_SPLASH2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
