@@ -1,11 +1,11 @@
-package com.ericksebas03.realidadaumentadamuseo
+package com.ericksebas03.respuestas
 
-import android.content.Intent
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.ericksebas03.realidadaumentadamuseo.R
 import java.util.Locale
 
 class Respuesta1Activity : AppCompatActivity(), TextToSpeech.OnInitListener {
