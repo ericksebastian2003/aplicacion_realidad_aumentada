@@ -59,6 +59,11 @@
             </intent-filter>
         </activity>
 
+        <!-- HomeActivity -->
+        <activity
+            android:name=".Home"
+            android:exported="true" />
+
         <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
