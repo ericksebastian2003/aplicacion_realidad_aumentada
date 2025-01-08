@@ -1,6 +1,7 @@
 package com.ericksebas03.realidadaumentadamuseo
 
 import android.os.Bundle
+import android.content.Intent
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -28,11 +29,11 @@ class Home : AppCompatActivity() {
 
                 // Aquí puedes agregar lógica para avanzar a otra actividad
                 // Si necesitas redirigir, descomenta el siguiente bloque:
-                /*
-                val intent = Intent(this, NextActivity::class.java)
+
+                val intent = Intent(this, InicioActivity::class.java)
                 intent.putExtra("USER_NAME", name) // Pasar datos si es necesario
                 startActivity(intent)
-                */
+
             }
         }
     }

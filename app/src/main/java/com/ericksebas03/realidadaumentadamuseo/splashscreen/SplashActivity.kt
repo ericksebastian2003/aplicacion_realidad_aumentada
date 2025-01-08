@@ -1,4 +1,4 @@
-package com.ericksebas03.splashscreen
+package com.ericksebas03.realidadaumentadamuseo.splashscreen
 
 import android.os.Bundle
 import android.widget.Button

@@ -1,13 +1,12 @@
-package com.ericksebas03.explicacion
+package com.ericksebas03.realidadaumentadamuseo
 
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.ericksebas03.realidadaumentadamuseo.R
 
-class ExplicacionActivity:AppCompatActivity() {
+class InicioActivity:AppCompatActivity() {
 
     private lateinit var tituloApp: TextView
     private lateinit var imagenPrincipal: ImageView
@@ -18,7 +17,7 @@ class ExplicacionActivity:AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_explicacion)
+        setContentView(R.layout.activity_inicio)
 
 
         tituloApp = findViewById(R.id.tituloApp)

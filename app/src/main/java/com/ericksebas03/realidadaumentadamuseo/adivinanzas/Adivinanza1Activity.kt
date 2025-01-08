@@ -1,4 +1,4 @@
-package com.ericksebas03.adivinanzas
+package com.ericksebas03.realidadaumentadamuseo.adivinanzas
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

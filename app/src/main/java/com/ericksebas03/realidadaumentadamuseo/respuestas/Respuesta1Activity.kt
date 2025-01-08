@@ -1,4 +1,4 @@
-package com.ericksebas03.respuestas
+package com.ericksebas03.realidadaumentadamuseo.respuestas
 
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
