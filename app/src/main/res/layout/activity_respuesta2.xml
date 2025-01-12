@@ -12,9 +12,9 @@
         android:id="@+id/textToRead"
         android:layout_width="389dp"
         android:layout_height="375dp"
-        android:text="El Tyrannosaurus rex, uno de los dinosaurios más icónicos, vivió hace 68-66 millones de años durante el período Cretácico tardío. Con hasta 13 metros de largo y un peso de 8 a 14 toneladas, fue un depredador carnívoro de gran potencia, conocido por su mordida extremadamente fuerte. Aunque sus brazos eran pequeños, estaban muy desarrollados muscularmente. Es considerado un pariente lejano de las aves modernas, lo que refuerza su importancia evolutiva."
+        android:text="El mamut lanudo (Mammuthus primigenius) habitó regiones frías hace 400,000 y 4,000 años, siendo uno de los últimos mamuts en extinguirse. Adaptado al frío extremo, tenía un grueso pelaje, grasa corporal de 10 cm y colmillos curvados que usaba para excavar nieve y defenderse. Su extinción se atribuye a la caza humana y al cambio climático, dejando restos bien preservados en el permafrost."
         android:textAlignment="center"
-        android:textSize="22sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,15 +28,15 @@
         app:icon="@drawable/ic_speaker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.269" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="209dp"
-        android:layout_height="45dp"
+        android:layout_width="187dp"
+        android:layout_height="50dp"
         android:text="¡Felicidades!"
         android:textAlignment="center"
         android:textSize="34sp"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <Button
         android:id="@+id/btn_continuar"
@@ -61,12 +61,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="171dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="120dp"
+        android:layout_width="176dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.154"
-        app:srcCompat="@drawable/adivinanza_pasado_1" />
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/adivinanza_pasado_2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
