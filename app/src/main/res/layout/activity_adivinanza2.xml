@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAlignment="center"
-    tools:context="com.ericksebas03.adivinanzas.Adivinanza1Activity">
+    tools:context="com.ericksebas03.adivinanzas.Adivinanza2Activity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="323dp"
         android:layout_height="41dp"
         android:fontFamily="sans-serif-black"
-        android:text="ADIVINANZA 9"
+        android:text="ADIVINANZA 10"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,10 +23,10 @@
         app:layout_constraintVertical_bias="0.047" />
 
     <Button
-        android:id="@+id/btn_encontrar"
+        android:id="@+id/btn_resolver"
         android:layout_width="374dp"
         android:layout_height="60dp"
-        android:text="Encontrar"
+        android:text="Resolver"
         android:textAlignment="center"
         android:textSize="27sp"
         android:textStyle="bold"
@@ -41,7 +41,7 @@
         android:id="@+id/textView2"
         android:layout_width="352dp"
         android:layout_height="264dp"
-        android:text="Bosques tropicales adornan mi terreno, grandes ríos me rodean y animales exóticos tengo; doy oxigeno y me llaman el pulmón del mundo"
+        android:text="Soy larga y escurridiza, en el agua me deslizo, puedo estrujar con fuerza y en la selva hago mi nido."
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +55,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Sabes quién soy?"
+        android:text="¿Sabes qué soy?"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"

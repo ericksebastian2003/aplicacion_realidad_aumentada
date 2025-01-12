@@ -39,6 +39,11 @@
             </intent-filter>
         </activity>
 
+        <!-- Adivinanza2Activity -->
+        <activity
+            android:name="com.ericksebas03.adivinanzas.Adivinanza2Activity"
+            android:exported="true" />
+
         <!-- SplashActivity -->
         <activity
             android:name="com.ericksebas03.splashscreen.SplashActivity"
@@ -77,3 +82,4 @@
     </application>
 
 </manifest>
+
