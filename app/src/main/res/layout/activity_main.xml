@@ -2,64 +2,53 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-             android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="16dp"
-        tools:context=".MainActivity">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-        <!-- Imagen del búho -->
-        <ImageView
-            android:id="@+id/owl_image"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:contentDescription="Imagen del búho"
-            android:src="@drawable/logo_app" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a PoliMuseoVR!"
+        android:textAlignment="center"
+        android:textColor="#2ECC71"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="16dp" />
 
-        <!-- Título de la aplicación -->
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¡Bienvenido a PoliMuseoVR!"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textAlignment="center" />
+    <ImageView
+        android:id="@+id/owl_image"
+        android:layout_width="331dp"
+        android:layout_height="302dp"
+        android:src="@drawable/logo_polimuseo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <!-- Descripción breve -->
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Explora la historia y el arte de una manera única."
-            android:textSize="16sp"
-            android:textAlignment="center" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="32dp" />
-
-        <!-- Botón de continuar -->
-        <Button
-            android:id="@+id/continue_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Continuar"
-            android:onClick="onContinue" />
-
-    </LinearLayout>
-
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="247dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#2ECC71"
+        android:text="Comenzar"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

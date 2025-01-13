@@ -49,8 +49,8 @@
 
     <Button
         android:id="@+id/btn_continuar"
-        android:layout_width="286dp"
-        android:layout_height="54dp"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
         android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

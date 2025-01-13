@@ -10,57 +10,53 @@
 
     <TextView
         android:id="@+id/tituloApp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_width="276dp"
+        android:layout_height="66dp"
         android:padding="16dp"
-        android:text="Bienvenido $nombre al recorrido virtual del Museo de Historia Natural 'Gustavo Orcés V.'"
-        android:textSize="24sp"
+        android:text="Hola , $nombre"
+        android:textAlignment="viewStart"
+        android:textColor="#2ECC71"
+        android:textSize="32sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imagenPrincipal"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="200dp"
-        android:contentDescription="Logo del buho"
-        android:scaleType="centerCrop"
-        android:src="@drawable/logo_app"
-        app:layout_constraintBottom_toTopOf="@+id/btnSigPag"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloApp"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/descripcion"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="348dp"
+        android:id="@+id/tituloApp2"
+        android:layout_width="157dp"
+        android:layout_height="74dp"
         android:padding="16dp"
-        android:text="Durante su recorrido recibirás distintos acertijos. Descúbrelos en las diferentes ubicaciones del museo: \n1. Entrada Principal del Museo  \n2.  Sala de Fauna Andina  \n3. Sala de Biodiversidad Amazónica \n4. Sala de Paleontología \n5. Sala de Educación Ambiental"
-        android:textSize="16sp"
+        android:text="0 puntos"
+        android:textAlignment="viewStart"
+        android:textColor="#2ECC71"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloApp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnSigPag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="16dp"
-        android:background="#A25454"
-        android:text="Iniciar recorrido"
-        android:textColorLink="#000000"
+        android:id="@+id/continue_button"
+        android:layout_width="247dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#2ECC71"
+        android:text="Comenzar"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

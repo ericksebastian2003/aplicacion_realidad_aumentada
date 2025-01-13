@@ -8,4 +8,4 @@
 - Eduardo Caza
 - Luis Guaygua
 - Francisco Caero
-- gErick Caiza
+- Erick Caiza

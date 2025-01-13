@@ -13,9 +13,9 @@
         android:layout_height="42dp"
         android:text="PoliMuseo VR"
         android:textAlignment="center"
-        android:textColor="#185BBF"
+        android:textColor="#2ECC71"
         android:textSize="34sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.435"
@@ -25,44 +25,35 @@
 
     <TextView
         android:id="@+id/descripcionsplash2"
-        android:layout_width="240dp"
-        android:layout_height="99dp"
-        android:text="Aprende mas del museo con la Realidad Aumentada"
+        android:layout_width="362dp"
+        android:layout_height="328dp"
+        android:text="Explora y aprende mientras resuelves preguntas sobre las exposiciones del museo. Busca el QR que responde a cada pregunta, gana puntos y descubre modelos 3D con datos curiosos. ¡Vive una aventura educativa interactiva y divertida!"
         android:textAlignment="center"
         android:textAllCaps="false"
+        android:textColor="#2ECC71"
         android:textSize="28sp"
-        android:textStyle="italic"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagensplash2"
-        app:layout_constraintVertical_bias="0.226" />
-
-    <ImageView
-        android:id="@+id/imagensplash2"
-        android:layout_width="227dp"
-        android:layout_height="226dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulosplash2"
-        app:layout_constraintVertical_bias="0.095"
-        app:srcCompat="@drawable/logo_app" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bottonsplash2"
-        android:layout_width="159dp"
-        android:layout_height="82dp"
-        android:backgroundTint="#4060B3"
-        android:fontFamily="sans-serif"
-        android:text="Continuar"
-        android:textAlignment="gravity"
-        android:textSize="20sp"
+        android:layout_width="247dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#2ECC71"
+        android:text="Comenzar"
+        android:textAlignment="center"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcionsplash2"
-        app:layout_constraintVertical_bias="0.503" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.ericksebas03.realidadaumentadamuseo.splashscreen
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -7,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.ericksebas03.realidadaumentadamuseo.R
+import com.ericksebas03.realidadaumentadamuseo.splashscreen.Splash2Activity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,11 +20,15 @@ class SplashActivity : AppCompatActivity() {
         val startButton: Button = findViewById(R.id.startButton)
 
         // Cambiar imagen y texto dinámicamente
-        logoImage.setImageResource(R.drawable.logo_app)
-        messageText.text = "Esperamos que te diviertas y descubras nuevos e interesantes datos que puedas contar a tus amigos"
+        //logoImage.setImageResource(R.drawable.logo_app)
+        //messageText.text = "Esperamos que te diviertas y descubras nuevos e interesantes datos que puedas contar a tus amigos"
 
         startButton.setOnClickListener {
-            Toast.makeText(this, "Esto debe llevar a la pantalla de inicio", Toast.LENGTH_SHORT).show()
+            // Crear un Intent
+            val intent = Intent(this, Splash2Activity::class.java)
+            // Iniciar intent
+            startActivity(intent)
         }
+
     }
 }
