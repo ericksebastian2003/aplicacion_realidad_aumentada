@@ -2,67 +2,79 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_adivinanza_am2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/titulosplash2"
-        android:layout_width="250dp"
-        android:layout_height="42dp"
-        android:text="PoliMuseo VR"
-        android:textAlignment="center"
-        android:textColor="#185BBF"
-        android:textSize="34sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <TextView
-        android:id="@+id/descripcionsplash2"
-        android:layout_width="240dp"
-        android:layout_height="99dp"
-        android:text="Aprende mas del museo con la Realidad Aumentada"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textSize="28sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagensplash2"
-        app:layout_constraintVertical_bias="0.226" />
+        <TextView
+            android:id="@+id/titulosplash2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:allowUndo="true"
+            android:fontFamily="@font/konkhmer_sleokchher"
+            android:text="@string/polimuseo_vr2"
+            android:textAlignment="center"
+            android:textColor="#2ECC71"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imagensplash2"
-        android:layout_width="227dp"
-        android:layout_height="226dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulosplash2"
-        app:layout_constraintVertical_bias="0.095"
-        app:srcCompat="@drawable/logo_app" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
 
-    <Button
-        android:id="@+id/bottonsplash2"
-        android:layout_width="159dp"
-        android:layout_height="82dp"
-        android:backgroundTint="#4060B3"
-        android:fontFamily="sans-serif"
-        android:text="Continuar"
-        android:textAlignment="gravity"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcionsplash2"
-        app:layout_constraintVertical_bias="0.503" />
+        <ImageView
+            android:id="@+id/imagensplash2"
+            android:layout_width="242dp"
+            android:layout_height="257dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/logo_app" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="34dp" />
+
+        <TextView
+            android:id="@+id/descripcionsplash2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/konkhmer_sleokchher"
+            android:text="@string/escanea_c_digos_qr_en_el_museo_epn_responde_preguntas_y_aprende_interactuando"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#2ECC71"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+        <Button
+            android:id="@+id/bottonsplash2"
+            android:layout_width="196dp"
+            android:layout_height="65dp"
+            android:background="#2ECC71"
+            android:fontFamily="@font/konkhmer_sleokchher"
+            android:text="@string/continuar"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
