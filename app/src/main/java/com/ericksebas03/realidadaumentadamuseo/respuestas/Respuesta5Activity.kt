@@ -1,4 +1,4 @@
 package com.ericksebas03.realidadaumentadamuseo.respuestas
 
-class Respuesta1Activity {
+class Respuesta5Activity {
 }

@@ -6,20 +6,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".respuestas.Respuesta1Activity">
+    tools:context=".respuestas.Respuesta4Activity">
 
     <TextView
         android:id="@+id/textToRead"
         android:layout_width="389dp"
         android:layout_height="375dp"
-        android:text="Es uno de los únicos depredadores que pueden romper la piel dura de los guanacos con su pico. Madura sexualmente tarde (mínimo a los 5 años, con algunos reportes de la primera cría a los 11 años), y solo tienen una cría cada 2-3 años. Esto los hace muy vulnerables a las amenazas."
+        android:text="El mamut lanudo (Mammuthus primigenius) habitó regiones frías hace 400,000 y 4,000 años, siendo uno de los últimos mamuts en extinguirse. Adaptado al frío extremo, tenía un grueso pelaje, grasa corporal de 10 cm y colmillos curvados que usaba para excavar nieve y defenderse. Su extinción se atribuye a la caza humana y al cambio climático, dejando restos bien preservados en el permafrost."
         android:textAlignment="center"
-        android:textSize="28sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.287" />
+        app:layout_constraintVertical_bias="0.676" />
 
     <Button
         android:id="@+id/btn_escuchar"
@@ -28,16 +28,16 @@
         app:icon="@drawable/ic_speaker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:text="¿Sabias qué?"
+        android:layout_width="187dp"
+        android:layout_height="50dp"
+        android:text="¡Felicidades!"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <Button
         android:id="@+id/btn_continuar"
@@ -61,12 +61,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="358dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="176dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807"
-        app:srcCompat="@drawable/condor" />
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/adivinanza_pasado_2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

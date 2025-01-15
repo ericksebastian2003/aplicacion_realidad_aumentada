@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val btnContinuar = findViewById<Button>(R.id.continue_button)
 
         btnContinuar.setOnClickListener{

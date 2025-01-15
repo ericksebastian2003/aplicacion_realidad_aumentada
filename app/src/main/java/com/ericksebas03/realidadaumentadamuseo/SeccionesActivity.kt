@@ -1,23 +1,55 @@
 package com.ericksebas03.realidadaumentadamuseo
 
 import android.os.Bundle
-import androidx.cardview.widget.CardView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
+import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza5Activity
+import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza1Activity
+//import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza7Activity
+
+import android.view.View
+
 
 class SeccionesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_secciones)
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_secciones)
 
-        //Variables
-        val section1 = findViewById<CardView>(R.id.card1)
-        val section2 = findViewById<CardView>(R.id.card2)
-        val section3 = findViewById<CardView>(R.id.card3)
-        val section4 = findViewById<CardView>(R.id.card4)
+            // Variables
+            val section1 = findViewById<View>(R.id.card1)
+            val section2 = findViewById<View>(R.id.card2)
+            val section3 = findViewById<View>(R.id.card3)
+            val section4 = findViewById<View>(R.id.card4)
+
+            section1.setOnClickListener {
+                val intent = Intent(
+                    this@SeccionesActivity,
+                    Adivinanza5Activity::class.java
+                )
+                startActivity(intent)
+            }
+
+            section2.setOnClickListener {
+                val intent = Intent(
+                    this@SeccionesActivity,
+                    Adivinanza1Activity::class.java
+                )
+                startActivity(intent)
+            }
+
+            section3.setOnClickListener {
+                val intent = Intent(
+                    this@SeccionesActivity,
+                    Adivinanza5Activity::class.java
+                )
+                startActivity(intent)
+            }
+
+            section4.setOnClickListener {
+                // Intent intent = new Intent(SeccionesActivity.this, Adivinanza7Activity.class);
+                // startActivity(intent);
+            }
+
 
     }
 }

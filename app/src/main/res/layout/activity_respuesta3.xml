@@ -6,20 +6,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".respuestas.Respuesta1Activity">
+    tools:context=".respuestas.Respuesta3Activity">
 
     <TextView
         android:id="@+id/textToRead"
         android:layout_width="389dp"
         android:layout_height="375dp"
-        android:text="Es uno de los únicos depredadores que pueden romper la piel dura de los guanacos con su pico. Madura sexualmente tarde (mínimo a los 5 años, con algunos reportes de la primera cría a los 11 años), y solo tienen una cría cada 2-3 años. Esto los hace muy vulnerables a las amenazas."
+        android:text="El Tyrannosaurus rex, uno de los dinosaurios más icónicos, vivió hace 68-66 millones de años durante el período Cretácico tardío. Con hasta 13 metros de largo y un peso de 8 a 14 toneladas, fue un depredador carnívoro de gran potencia, conocido por su mordida extremadamente fuerte. Aunque sus brazos eran pequeños, estaban muy desarrollados muscularmente. Es considerado un pariente lejano de las aves modernas, lo que refuerza su importancia evolutiva."
         android:textAlignment="center"
-        android:textSize="28sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.287" />
+        app:layout_constraintVertical_bias="0.676" />
 
     <Button
         android:id="@+id/btn_escuchar"
@@ -31,13 +31,13 @@
         app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:text="¿Sabias qué?"
+        android:layout_width="209dp"
+        android:layout_height="45dp"
+        android:text="¡Felicidades!"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <Button
         android:id="@+id/btn_continuar"
@@ -61,12 +61,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="358dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="171dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807"
-        app:srcCompat="@drawable/condor" />
+        app:layout_constraintVertical_bias="0.154"
+        app:srcCompat="@drawable/adivinanza_pasado_1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

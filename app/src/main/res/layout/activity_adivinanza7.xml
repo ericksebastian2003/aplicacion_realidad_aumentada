@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_adivinanza_am2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adivinanzas.Adivinanza3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#02BA86"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:layout_width="411dp"
+            android:layout_height="269dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="#00FFFFFF">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="63dp"
+                android:layout_height="68dp"
+                android:src="@drawable/recargar" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="60sp"
+                android:paddingTop="100sp"
+                android:text="@string/que_soy"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                tools:ignore="RtlSymmetry" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B1FFFFFF">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100sp"
+                android:layout_marginTop="350sp"
+                android:background="#2ECC71"
+                android:text="@string/encontrar"
+                android:textColorLink="#619D69"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="127dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="110sp"
+                android:layout_marginTop="250sp"
+                android:src="@drawable/camara" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginEnd="30sp"
+                android:fontFamily="@font/pixelify_sans_bold"
+                android:text="@string/en_la_tierra_o_en_el_mar_puedo_vivir_sin_descansar_cuando_no_me_cuidan_bien_me_convierto_en_un_gran_mal"
+                android:textColor="#2ECC71"
+                android:textSize="28sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

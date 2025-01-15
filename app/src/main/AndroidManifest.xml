@@ -19,8 +19,20 @@
         android:theme="@style/Theme.RealidadAumentadaMuseo"
         tools:targetApi="31">
         <activity
+            android:name=".CameraActivity"
+            android:exported="false" />
+        <activity
             android:name=".SeccionesActivity"
             android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".splashscreen.SplashActivity"
             android:exported="true" />
@@ -28,25 +40,34 @@
             android:name=".splashscreen.Splash2Activity"
             android:exported="true" />
         <activity
-            android:name=".InicioActivity"
-            android:exported="true"
-            />
+            android:name=".SolicitarNombreActivity"
+            android:exported="true" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".InicioActivity"
+            android:exported="true" />
+        <activity
+            android:name=".adivinanzas.Adivinanza3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".adivinanzas.Adivinanza4Activity"
+            android:exported="true" />
         <activity
             android:name=".adivinanzas.Adivinanza1Activity"
             android:exported="true" />
         <activity
-            android:name=".Respuesta1Activity"
+            android:name=".adivinanzas.Adivinanza2Activity"
             android:exported="true" />
         <activity
-            android:name=".SolicitarNombreActivity"
+            android:name=".adivinanzas.Adivinanza3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".adivinanzas.Adivinanza4Activity"
+            android:exported="true" />
+        <activity
+            android:name=".respuestas.Respuesta3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".respuestas.Respuesta4Activity"
             android:exported="true" />
     </application>
 

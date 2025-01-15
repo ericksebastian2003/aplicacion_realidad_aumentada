@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">PoliMuseo VR</string>
+    <string name="app_name">Realidad Aumentada Museo</string>
+    <string name="explora_el_museo_mientras_resuelves_una_emocionante_adivinanza_utiliza_la_realidad_aumentada_para_encontrar_el_c_digo_qr_oculto_y_descubre_m_s_sobre_el_arte_y_la_historia_de_manera_interactiva">Explora el museo mientras resuelves una emocionante adivinanza. Utiliza la Realidad Aumentada para encontrar el código QR oculto y descubre más sobre el arte y la historia de manera interactiva.</string>
+    <string name="todo">TODO</string>
+    <string name="continuar">Continuar</string>
+    <string name="polimuseo_vr">PoliMuseo VR</string>
+    <string name="escanea_c_digos_qr_en_el_museo_epn_responde_preguntas_y_aprende_interactuando">Escanea códigos QR en el museo EPN, responde preguntas y aprende interactuando.</string>
+    <string name="polimuseo_vr2">PoliMuseo VR</string>
+    <string name="en_la_tierra_o_en_el_mar_puedo_vivir_sin_descansar_cuando_no_me_cuidan_bien_me_convierto_en_un_gran_mal">En la tierra o en el mar, puedo vivir sin descansar, cuando no me cuidan bien, me convierto en un gran mal.</string>
+    <string name="encontrar">Encontrar</string>
+    <string name="que_soy">¿ Que soy ?</string>
+    <string name="encontrarrs">Encontrar</string>
+    <string name="soy_el_pulm_n_de_la_tierra_con_hojas_de_verde_color_ayudo_a_purificar_el_aire_y_en_el_bosque_soy_protector">Soy el pulmón de la Tierra, con hojas de verde color, ayudo a purificar el aire, y en el bosque soy protector.</string>
+
+
 </resources>
