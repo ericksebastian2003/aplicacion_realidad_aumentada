@@ -13,7 +13,7 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="Splash2Activity">
+      <SelectionState runConfigName="EscanearCodigoQR">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
