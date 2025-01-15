@@ -27,14 +27,13 @@ class Home : AppCompatActivity() {
                 // Mensaje de bienvenida al usuario
                 Toast.makeText(this, "¡Bienvenido/a, $name!", Toast.LENGTH_SHORT).show()
 
-                // Aquí puedes agregar lógica para avanzar a otra actividad
-                // Si necesitas redirigir, descomenta el siguiente bloque:
-
-                val intent = Intent(this, InicioActivity::class.java)
-                intent.putExtra("USER_NAME", name) // Pasar datos si es necesario
+                // Aquí rediriges a la actividad de adivinanza
+                val intent = Intent(this, com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza11Activity::class.java)
+                intent.putExtra("USER_NAME", name) // Pasar el nombre del usuario si es necesario
                 startActivity(intent)
 
             }
         }
     }
 }
+

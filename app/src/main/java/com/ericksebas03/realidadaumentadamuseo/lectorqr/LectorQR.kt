@@ -20,6 +20,8 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.content.ContextCompat
 import android.Manifest
+import android.content.Intent
+import android.widget.Button
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage
 import com.ericksebas03.realidadaumentadamuseo.R
@@ -43,6 +45,13 @@ class LectorQR : AppCompatActivity() {
         binding = ActivityLectorqrBinding.inflate(layoutInflater)
         setContentView(binding.root)
         cameraExecutor = Executors.newSingleThreadExecutor()
+
+        val btngotoar: Button = findViewById(R.id.btn_gotoar)
+        btngotoar.setOnClickListener {
+            // Redirigir a la actividad LectorQRActivity (usando ZXing o tu lector preferido)
+            val intent = Intent(this, com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta11Activity ::class.java) //
+            startActivity(intent)
+        }
 
         barcodeScanner = BarcodeScanning.getClient()
 
@@ -114,6 +123,7 @@ class LectorQR : AppCompatActivity() {
             binding.resultTextView.text = "No se detecto codigo"
         }
     }
+
 
     override fun onDestroy() {
         super.onDestroy()

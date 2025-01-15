@@ -16,16 +16,29 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Resultado del escaneo -->
+
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:padding="16dp"
         android:gravity="center"
+        android:padding="16dp"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/previewView"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/previewView" />
+
+    <Button
+        android:id="@+id/btn_gotoar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Responder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

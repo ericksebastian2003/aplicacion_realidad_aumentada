@@ -20,11 +20,19 @@
         <activity
             android:name=".Respuesta1Activity"
             android:exported="false" />
+        <activity android:name=".lectorqr.LectorQR">
+            <!-- Cualquier configuración adicional -->
+        </activity>
+
+        <activity android:name=".adivinanzas.Adivinanza11Activity">
+            <!-- Cualquier configuración adicional -->
+        </activity>
+        <activity android:name=".respuestas.Respuesta11Activity">
+            <!-- Cualquier configuración adicional -->
+        </activity>
+
         <activity
             android:name=".Home"
-            android:exported="false" />
-        <activity
-            android:name=".lectorqr.LectorQR"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
