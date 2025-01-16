@@ -12,15 +12,13 @@ class Splash2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash2)
 
-        // Buscar el botón en el layout
-        val botonContinuar = findViewById<Button>(R.id.bottonsplash2)
-
-        // Configurar el click del botón
+        val botonContinuar = findViewById<Button>(R.id.btn_continuar)
         botonContinuar.setOnClickListener {
-            // Crear un Intent para iniciar Adivinanza1Activity
-            val intent = Intent(this, Adivinanza1Activity::class.java)
-            // Iniciar Adivinanza1Activity
+            // Redirigir a la actividad LectorQRActivity (usando ZXing o tu lector preferido)
+            val intent = Intent(this, com.ericksebas03.realidadaumentadamuseo.Home ::class.java) // ZXing CaptureActivity
             startActivity(intent)
         }
+
+
     }
 }

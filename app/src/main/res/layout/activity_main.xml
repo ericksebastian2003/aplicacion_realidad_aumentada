@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"> <!-- Fondo degradado -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,14 +15,14 @@
         android:padding="16dp"
         tools:context=".MainActivity">
 
-        <!-- Imagen del búho -->
-
+        <!-- Imagen del búho con borde -->
         <ImageView
             android:id="@+id/owl_image"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:contentDescription="Imagen del búho"
-            android:src="@drawable/logo_app" />
+            android:src="@drawable/logo_app"
+            android:scaleType="centerCrop" />
 
         <Space
             android:layout_width="match_parent"
@@ -31,9 +34,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="¡Bienvenido a PoliMuseoVR!"
+            android:textAlignment="center"
+            android:textColor="#117D31"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:textAlignment="center" />
+            android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"
@@ -45,8 +49,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Explora la historia y el arte de una manera única."
-            android:textSize="16sp"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#2ECC71"
+            android:textSize="16sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -54,13 +59,13 @@
 
         <!-- Botón de continuar -->
         <Button
-            android:id="@+id/continue_button"
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_continuar1"
+            android:layout_width="151dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
             android:text="Continuar"
-            android:onClick="onContinue" />
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

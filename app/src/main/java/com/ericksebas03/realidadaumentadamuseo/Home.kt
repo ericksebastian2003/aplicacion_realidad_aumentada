@@ -28,7 +28,7 @@ class Home : AppCompatActivity() {
                 Toast.makeText(this, "¡Bienvenido/a, $name!", Toast.LENGTH_SHORT).show()
 
                 // Aquí rediriges a la actividad de adivinanza
-                val intent = Intent(this, com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza11Activity::class.java)
+                val intent = Intent(this, com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza7Activity::class.java)
                 intent.putExtra("USER_NAME", name) // Pasar el nombre del usuario si es necesario
                 startActivity(intent)
 

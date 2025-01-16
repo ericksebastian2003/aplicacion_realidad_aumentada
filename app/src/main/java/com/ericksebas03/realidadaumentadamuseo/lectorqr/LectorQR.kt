@@ -2,14 +2,9 @@ package com.ericksebas03.realidadaumentadamuseo.lectorqr
 import androidx.camera.core.Preview
 import android.os.Bundle
 import android.util.Size
-import android.os.Process
-import android.util.Log
-import android.view.PixelCopy.Request
-import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.OptIn
 import androidx.appcompat.app.AppCompatActivity
-import androidx.camera.core.Camera
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ExperimentalGetImage
 import androidx.camera.core.ImageAnalysis
@@ -17,7 +12,6 @@ import androidx.camera.core.ImageProxy
 import androidx.camera.core.resolutionselector.ResolutionSelector
 import androidx.camera.core.resolutionselector.ResolutionStrategy
 import androidx.camera.lifecycle.ProcessCameraProvider
-import androidx.camera.view.PreviewView
 import androidx.core.content.ContextCompat
 import android.Manifest
 import android.content.Intent
@@ -28,7 +22,6 @@ import com.ericksebas03.realidadaumentadamuseo.R
 import com.ericksebas03.realidadaumentadamuseo.databinding.ActivityLectorqrBinding
 import com.google.mlkit.vision.barcode.BarcodeScanner
 import com.google.mlkit.vision.barcode.common.Barcode
-import java.util.concurrent.Executor
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -49,7 +42,7 @@ class LectorQR : AppCompatActivity() {
         val btngotoar: Button = findViewById(R.id.btn_gotoar)
         btngotoar.setOnClickListener {
             // Redirigir a la actividad LectorQRActivity (usando ZXing o tu lector preferido)
-            val intent = Intent(this, com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta11Activity ::class.java) //
+            val intent = Intent(this, com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta7Activity ::class.java) //
             startActivity(intent)
         }
 

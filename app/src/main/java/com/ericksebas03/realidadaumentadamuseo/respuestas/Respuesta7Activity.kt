@@ -7,12 +7,12 @@ import com.google.ar.core.Config
 import io.github.sceneview.ar.ArSceneView
 import io.github.sceneview.ar.node.ArModelNode
 import io.github.sceneview.math.Position
-class Respuesta11Activity : AppCompatActivity() {
+class Respuesta7Activity : AppCompatActivity() {
     private lateinit var sceneView: ArSceneView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_respuesta11ar)
+        setContentView(R.layout.activity_respuesta7ar)
 
         sceneView = findViewById<ArSceneView>(R.id.sceneView).apply {
             this.lightEstimationMode = Config.LightEstimationMode.DISABLED

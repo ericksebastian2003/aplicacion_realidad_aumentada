@@ -24,15 +24,23 @@
             <!-- Cualquier configuración adicional -->
         </activity>
 
-        <activity android:name=".adivinanzas.Adivinanza11Activity">
+        <activity android:name=".adivinanzas.Adivinanza7Activity">
             <!-- Cualquier configuración adicional -->
         </activity>
-        <activity android:name=".respuestas.Respuesta11Activity">
+        <activity android:name=".respuestas.Respuesta7Activity">
+            <!-- Cualquier configuración adicional -->
+        </activity>
+        <activity android:name=".MainActivity">
+            <!-- Cualquier configuración adicional -->
+        </activity>
+        <activity android:name=".splashscreen.Splash2Activity">
             <!-- Cualquier configuración adicional -->
         </activity>
 
+
+
         <activity
-            android:name=".Home"
+            android:name=".splashscreen.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,6 +49,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Home">
+            <!-- Cualquier configuración adicional -->
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

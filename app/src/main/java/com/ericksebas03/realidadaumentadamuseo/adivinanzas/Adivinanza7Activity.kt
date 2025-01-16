@@ -6,10 +6,10 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.ericksebas03.realidadaumentadamuseo.R
 
-class Adivinanza11Activity : AppCompatActivity() {
+class Adivinanza7Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_adivinanza_11)
+        setContentView(R.layout.activity_adivinanza_7)
 
         // Obtener la referencia del Button
         val btnLectorQR: Button = findViewById(R.id.btnLectorQR)

@@ -5,7 +5,8 @@
     android:id="@+id/activity_adivinanza_am2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background_gradient"> <!-- Fondo degradado -->
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,6 +16,7 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
+
         <TextView
             android:id="@+id/titulosplash2"
             android:layout_width="wrap_content"
@@ -23,7 +25,7 @@
             android:fontFamily="@font/konkhmer_sleokchher"
             android:text="@string/polimuseo_vr2"
             android:textAlignment="center"
-            android:textColor="#2ECC71"
+            android:textColor="#117D31"
             android:textSize="34sp"
             android:textStyle="bold" />
 
@@ -34,7 +36,7 @@
         <ImageView
             android:id="@+id/imagensplash2"
             android:layout_width="242dp"
-            android:layout_height="257dp"
+            android:layout_height="228dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/todo"
             android:src="@drawable/logo_app" />
@@ -64,10 +66,10 @@
             android:layout_height="55dp" />
 
         <Button
-            android:id="@+id/bottonsplash2"
+            android:id="@+id/btn_continuar"
             android:layout_width="196dp"
             android:layout_height="65dp"
-            android:background="#2ECC71"
+            android:background="@drawable/rounded_button"
             android:fontFamily="@font/konkhmer_sleokchher"
             android:text="@string/continuar"
             android:textColor="#FFFFFF"
