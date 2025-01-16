@@ -50,13 +50,23 @@ dependencies {
     implementation("com.google.android.gms:play-services-basement:18.4.0")
 
 
-    // Dependencias de CameraX
+    /* Dependencias de CameraX -- SEbas
     implementation("androidx.camera:camera-core:1.2.0")
     implementation("androidx.camera:camera-camera2:1.2.0")
     implementation("androidx.camera:camera-lifecycle:1.2.0")
     implementation("androidx.camera:camera-view:1.2.0")
     // Dependencia de ML Kit para el escaneo de códigos QR
-    implementation("com.google.mlkit:barcode-scanning:17.0.0")
+    //implementation("com.google.mlkit:barcode-scanning:17.0.0")
+*/
+
+    // ML Kit Barcode Scanning
+    implementation("com.google.mlkit:barcode-scanning:17.3.0")
+
+    // CameraX
+    implementation("androidx.camera:camera-core:1.4.1")
+    implementation("androidx.camera:camera-camera2:1.4.1")
+    implementation("androidx.camera:camera-lifecycle:1.4.1")
+    implementation("androidx.camera:camera-view:1.2.1")
 
     // Debugging tools for Compose
     //debugImplementation ("androidx.compose.ui:ui-tooling:1.5.1")
@@ -65,6 +75,10 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.8.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
+
+    // 3D and ARCore
+    implementation("io.github.sceneview:arsceneview:0.10.0")
 
 
     implementation(libs.androidx.core.ktx)

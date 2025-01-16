@@ -10,19 +10,18 @@
 
     <TextView
         android:id="@+id/tv_welcome"
-        android:layout_width="267dp"
-        android:layout_height="87dp"
+        android:layout_width="367dp"
+        android:layout_height="120dp"
         android:text="¿Cómo te llamas?"
         android:textAlignment="center"
         android:textColor="#2ECC71"
-        android:textSize="38sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imagensplash2"
@@ -49,36 +48,36 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
+        app:layout_constraintVertical_bias="0.857" />
 
     <Button
         android:id="@+id/btn_continue"
-        android:layout_width="247dp"
-        android:layout_height="62dp"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
         android:backgroundTint="#2ECC71"
         android:text="Comenzar"
         android:textAlignment="center"
-        android:textSize="22sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.982" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="380dp"
+        android:layout_height="168dp"
         android:text="Queremos conocerte mejor para hacer tu experiencia más personal y divertida. ¡Escribe tu nombre para comenzar la aventura!"
         android:textAlignment="center"
         android:textColor="#2ECC71"
-        android:textSize="24sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintVertical_bias="0.703" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

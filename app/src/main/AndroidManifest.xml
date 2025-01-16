@@ -46,16 +46,16 @@
             android:name=".InicioActivity"
             android:exported="true" />
         <activity
-            android:name=".adivinanzas.Adivinanza3Activity"
-            android:exported="true" />
-        <activity
-            android:name=".adivinanzas.Adivinanza4Activity"
-            android:exported="true" />
-        <activity
             android:name=".adivinanzas.Adivinanza1Activity"
             android:exported="true" />
         <activity
             android:name=".adivinanzas.Adivinanza2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".adivinanzas.Adivinanza3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".adivinanzas.Adivinanza4Activity"
             android:exported="true" />
         <activity
             android:name=".adivinanzas.Adivinanza3Activity"

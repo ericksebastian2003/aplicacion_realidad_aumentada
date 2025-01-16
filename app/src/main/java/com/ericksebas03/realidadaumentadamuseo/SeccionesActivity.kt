@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza5Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza1Activity
-//import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza7Activity
+import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza7Activity
 
 import android.view.View
 
@@ -22,32 +22,23 @@ class SeccionesActivity : AppCompatActivity() {
             val section4 = findViewById<View>(R.id.card4)
 
             section1.setOnClickListener {
-                val intent = Intent(
-                    this@SeccionesActivity,
-                    Adivinanza5Activity::class.java
-                )
+                val intent = Intent(this,Adivinanza1Activity::class.java)
                 startActivity(intent)
             }
 
             section2.setOnClickListener {
-                val intent = Intent(
-                    this@SeccionesActivity,
-                    Adivinanza1Activity::class.java
-                )
+                val intent = Intent(this, Adivinanza1Activity::class.java)
                 startActivity(intent)
             }
 
             section3.setOnClickListener {
-                val intent = Intent(
-                    this@SeccionesActivity,
-                    Adivinanza5Activity::class.java
-                )
+                val intent = Intent(this, Adivinanza5Activity::class.java)
                 startActivity(intent)
             }
 
             section4.setOnClickListener {
-                // Intent intent = new Intent(SeccionesActivity.this, Adivinanza7Activity.class);
-                // startActivity(intent);
+                //val intent = Intent(this, Adivinanza7Activity::class.java);
+               // startActivity(intent);
             }
 
 

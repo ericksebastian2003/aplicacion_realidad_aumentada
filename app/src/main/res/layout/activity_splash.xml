@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/logoImage"
-        android:layout_width="336dp"
-        android:layout_height="209dp"
+        android:layout_width="369dp"
+        android:layout_height="225dp"
         android:contentDescription="Logo"
         android:src="@drawable/logo_polimuseo"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,53 +18,54 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintVertical_bias="0.312" />
 
     <TextView
         android:id="@+id/messageText"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_width="366dp"
+        android:layout_height="252dp"
         android:text="Escanea códigos QR en el museo EPN,  responde preguntas y aprende interactuando"
         android:textAlignment="center"
         android:textColor="#2ECC71"
-        android:textSize="24sp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="294dp"
+        android:layout_height="82dp"
+        android:backgroundTint="#2ECC71"
+        android:text="Siguiente"
+        android:textAlignment="center"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722" />
-
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="247dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#2ECC71"
-        android:text="Comenzar"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.91"
-        />
+        app:layout_constraintVertical_bias="0.933" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="307dp"
-        android:layout_height="65dp"
-        android:text="PoliMuseo VR"
+        android:layout_width="392dp"
+        android:layout_height="109dp"
+        android:text="PoliMuseoVR"
         android:textAlignment="center"
         android:textColor="#2ECC71"
-        android:textSize="42sp"
+        android:textSize="58sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintVertical_bias="0.059" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,8 +8,6 @@
     tools:context=".CameraActivity">
 
     <!-- Cámara PreviewView -->
-    <FrameLayout
-
     <androidx.camera.view.PreviewView
         android:id="@+id/previewView"
         android:layout_width="300dp"
@@ -17,24 +16,17 @@
         app:layout_constraintBottom_toTopOf="@id/resultTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_scan"
-        android:layout_width="104dp"
-        android:layout_height="101dp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_margin="80dp"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936"
-        app:srcCompat="@drawable/ic_scan" />
-</>
+    <!-- Imagen sobrepuesta al botón -->
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_scan"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="543dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

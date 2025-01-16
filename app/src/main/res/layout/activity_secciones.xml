@@ -25,43 +25,44 @@
 
     <View
         android:id="@+id/card2"
-        android:layout_width="334dp"
-        android:layout_height="101dp"
+        android:layout_width="381dp"
+        android:layout_height="143dp"
         android:background="@drawable/background_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintVertical_bias="0.428" />
 
     <View
         android:id="@+id/card1"
-        android:layout_width="334dp"
-        android:layout_height="101dp"
+        android:layout_width="381dp"
+        android:layout_height="143dp"
         android:background="@drawable/background_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintVertical_bias="0.163" />
 
     <View
         android:id="@+id/card3"
-        android:layout_width="334dp"
-        android:layout_height="101dp"
+        android:layout_width="381dp"
+        android:layout_height="143dp"
         android:background="@drawable/background_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.685" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="281dp"
+        android:layout_width="312dp"
         android:layout_height="80dp"
-        android:text="¿En qué sección te encuentras?"
+        android:text="¿En qué sección te enffcuentras?"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
@@ -75,41 +76,41 @@
 
     <View
         android:id="@+id/card4"
-        android:layout_width="334dp"
-        android:layout_height="101dp"
+        android:layout_width="381dp"
+        android:layout_height="143dp"
         android:background="@drawable/background_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.942" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="77dp"
         android:layout_height="76dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="@+id/card1"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="@+id/card1"
         app:layout_constraintTop_toTopOf="@+id/card1"
         app:srcCompat="@drawable/logo_polimuseo" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="173dp"
-        android:layout_height="48dp"
+        android:layout_width="233dp"
+        android:layout_height="70dp"
         android:text="Sala de Paleontología"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/card1"
         app:layout_constraintEnd_toEndOf="@+id/card1"
-        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="@+id/card1"
         app:layout_constraintTop_toTopOf="@+id/card1"
-        app:layout_constraintVertical_bias="0.528" />
+        app:layout_constraintVertical_bias="0.468" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -149,48 +150,48 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="209dp"
-        android:layout_height="60dp"
+        android:layout_width="236dp"
+        android:layout_height="98dp"
         android:text="Sala de Biodiversidad Amazónica "
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/card3"
         app:layout_constraintEnd_toEndOf="@+id/card3"
-        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintHorizontal_bias="0.826"
         app:layout_constraintStart_toStartOf="@+id/card3"
         app:layout_constraintTop_toTopOf="@+id/card3"
-        app:layout_constraintVertical_bias="0.487" />
+        app:layout_constraintVertical_bias="0.526" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="203dp"
-        android:layout_height="57dp"
+        android:layout_width="213dp"
+        android:layout_height="87dp"
         android:text="Sala de Educación Ambiental"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/card4"
         app:layout_constraintEnd_toEndOf="@+id/card4"
-        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintHorizontal_bias="0.774"
         app:layout_constraintStart_toStartOf="@+id/card4"
         app:layout_constraintTop_toTopOf="@+id/card4"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintVertical_bias="0.433" />
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="74dp"
         android:text=" Sala de Fauna Andina"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/card2"
         app:layout_constraintEnd_toEndOf="@+id/card2"
-        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintHorizontal_bias="0.765"
         app:layout_constraintStart_toStartOf="@+id/card2"
         app:layout_constraintTop_toTopOf="@+id/card2"
-        app:layout_constraintVertical_bias="0.459" />
+        app:layout_constraintVertical_bias="0.465" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@ import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.google.mlkit.vision.barcode.Barcode
+//import com.google.mlkit.vision.barcode.Barcode
 import com.google.mlkit.vision.common.InputImage
 import androidx.camera.core.ImageProxy
 import android.Manifest
@@ -29,16 +29,19 @@ import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta6Activity
 //import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta7Activity
 //import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta8Activity
 import com.ericksebas03.realidadaumentadamuseo.IntentarDeNuevoActivity
+
+
 class CameraActivity : AppCompatActivity() {
 
+    /*
     private lateinit var binding: ActivityCameraBinding
     private val cameraPermissionRequestCode = 100
     private lateinit var barcodeScanner: BarcodeScanner
-
+    */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_camera)
-        binding = ActivityCameraBinding.inflate(layoutInflater)
+        /* binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
         // Inicializa el escáner de códigos de barras (QR)
         barcodeScanner = BarcodeScanning.getClient()
@@ -136,6 +139,9 @@ class CameraActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Se requiere permiso de la cámara", Toast.LENGTH_SHORT).show()
             }
-        }
+
+    }
+
+        */
     }
 }
