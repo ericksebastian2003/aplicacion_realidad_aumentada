@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
-//Importar lso componentes
+//Importar los componentes
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza1Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza2Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza3Activity
