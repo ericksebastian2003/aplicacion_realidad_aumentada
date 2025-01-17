@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -47,7 +49,6 @@ dependencies {
     implementation ("androidx.activity:activity-compose:1.8.0")
 
 
-    implementation("com.google.android.gms:play-services-basement:18.4.0")
 
 
     /* Dependencias de CameraX -- SEbas
@@ -79,6 +80,12 @@ dependencies {
 
     // 3D and ARCore
     implementation("io.github.sceneview:arsceneview:0.10.0")
+
+
+    // Firebase
+    implementation(platform("com.google.firebase:firebase-bom:32.0.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-firestore")
 
 
     implementation(libs.androidx.core.ktx)
