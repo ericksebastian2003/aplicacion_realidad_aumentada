@@ -5,16 +5,18 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/titulosplash2"
-        android:layout_width="366dp"
-        android:layout_height="117dp"
+        android:layout_width="372dp"
+        android:layout_height="111dp"
+        android:gravity="center"
         android:text="PoliMuseoVR"
         android:textAlignment="center"
         android:textColor="#2ECC71"
-        android:textSize="60sp"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,25 +27,24 @@
 
     <TextView
         android:id="@+id/descripcionsplash2"
-        android:layout_width="376dp"
-        android:layout_height="366dp"
+        android:layout_width="357dp"
+        android:layout_height="357dp"
+        android:layout_marginBottom="32dp"
         android:text="Explora y aprende mientras resuelves preguntas sobre las exposiciones del museo. Busca el QR que responde a cada pregunta, gana puntos y descubre modelos 3D con datos curiosos. ¡Vive una aventura educativa interactiva y divertida!"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#2ECC71"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottonsplash2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bottonsplash2"
         android:layout_width="294dp"
         android:layout_height="82dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="#2ECC71"
         android:text="Comenzar"
         android:textAlignment="center"
@@ -51,11 +52,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.418"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.907"
+        app:layout_constraintHorizontal_bias="0.495"
 
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

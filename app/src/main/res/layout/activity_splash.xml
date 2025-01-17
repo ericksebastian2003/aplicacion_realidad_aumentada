@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context=".splashscreen.SplashActivity">
 
     <ImageView
@@ -53,19 +54,19 @@
         app:layout_constraintVertical_bias="0.933" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="392dp"
-        android:layout_height="109dp"
-        android:text="PoliMuseoVR"
+        android:id="@+id/titulosplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:allowUndo="true"
+        android:fontFamily="@font/konkhmer_sleokchher"
+        android:text="@string/polimuseo_vr2"
         android:textAlignment="center"
         android:textColor="#2ECC71"
-        android:textSize="58sp"
+        android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.61"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

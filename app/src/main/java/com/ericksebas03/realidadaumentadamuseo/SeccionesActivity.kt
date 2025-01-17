@@ -37,8 +37,8 @@ class SeccionesActivity : AppCompatActivity() {
             }
 
             section4.setOnClickListener {
-                //val intent = Intent(this, Adivinanza7Activity::class.java);
-               // startActivity(intent);
+                val intent = Intent(this, Adivinanza7Activity::class.java);
+                startActivity(intent);
             }
 
 

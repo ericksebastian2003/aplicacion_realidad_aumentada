@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="350dp"
+        android:layout_height="251dp"
+        android:layout_marginBottom="54dp"
+        android:text="Los árboles son verdaderos guardianes del medio ambiente. Son los pulmones de nuestro planeta, ya que a través del proceso de fotosíntesis, absorben dióxido de carbono (CO2) y liberan oxígeno, lo que permite la vida de todos los seres vivos."
+        android:textColor="#2ECC71"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <io.github.sceneview.ar.ArSceneView
         android:id="@+id/sceneView"
         android:layout_width="380dp"
@@ -15,17 +28,6 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="JUGADOR 29 ELIMINADO DESCRIPCION BALBLABLALBABLA"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sceneView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
