@@ -13,7 +13,7 @@ class Adivinanza1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_adivinanza1)
+        setContentView(R.layout.activity_adivinanza_1)
 
         val btnContinuar = findViewById<Button>(R.id.btn_intentar)
 
