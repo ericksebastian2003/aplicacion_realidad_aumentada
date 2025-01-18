@@ -27,13 +27,13 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="284dp"
+            android:layout_height="235dp"
             android:layout_marginStart="30sp"
             android:layout_marginTop="40sp"
             android:layout_marginEnd="30sp"
             android:fontFamily="@font/pixelify_sans_bold"
-            android:text="@string/soy_el_pulm_n_de_la_tierra_con_hojas_de_verde_color_ayudo_a_purificar_el_aire_y_en_el_bosque_soy_protector"
+            android:text="Soy vital para la vida, pero escaso en la tierra, si no me cuidas, me perderás. ¿Qué soy?"
             android:textAlignment="center"
             android:textColor="#2ECC71"
             android:textSize="28sp" />

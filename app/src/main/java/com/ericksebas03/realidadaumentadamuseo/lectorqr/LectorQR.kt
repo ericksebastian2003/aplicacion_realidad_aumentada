@@ -27,7 +27,17 @@ import java.util.concurrent.Executors
 import com.ericksebas03.realidadaumentadamuseo.AdivinanzaState
 import com.ericksebas03.realidadaumentadamuseo.splashscreen.Splash2Activity
 import com.ericksebas03.realidadaumentadamuseo.IntentarDeNuevoActivity
+import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta1Activity
+import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta2Activity
+import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta3Activity
+import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta4Activity
+import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta5Activity
+import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta6Activity
 import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta7Activity
+import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta8Activity
+
+
+
 
 class LectorQR : AppCompatActivity() {
 
@@ -54,15 +64,26 @@ class LectorQR : AppCompatActivity() {
 
             // Comprobar si el texto coincide con la respuesta correcta
             if (scannedText == respuestaCorrecta) {
-                // Redirigir a la pantalla de respuesta correcta
-                val intent = Intent(this, Respuesta7Activity::class.java)
+                // Usamos when para redirigir a la pantalla correspondiente
+                val intent = when (adivinanzaActiva) {
+                    1 -> Intent(this, Respuesta1Activity::class.java)
+                    2 -> Intent(this, Respuesta2Activity::class.java)
+                    3 -> Intent(this, Respuesta3Activity::class.java)
+                    4 -> Intent(this, Respuesta4Activity::class.java)
+                    5 -> Intent(this, Respuesta5Activity::class.java)
+                    6 -> Intent(this, Respuesta6Activity::class.java)
+                    7 -> Intent(this, Respuesta7Activity::class.java)
+                    8 -> Intent(this, Respuesta8Activity::class.java)
+                    else -> Intent(this, IntentarDeNuevoActivity::class.java)
+                }
                 startActivity(intent)
             } else {
                 // Redirigir a la pantalla de respuesta incorrecta
-                val intent = Intent(this,IntentarDeNuevoActivity::class.java)
+                val intent = Intent(this, IntentarDeNuevoActivity::class.java)
                 startActivity(intent)
             }
         }
+
 
         barcodeScanner = BarcodeScanning.getClient()
 

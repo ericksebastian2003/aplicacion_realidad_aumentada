@@ -3,10 +3,7 @@ package com.ericksebas03.realidadaumentadamuseo
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
-//Importar los componentes
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza1Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza2Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza3Activity
@@ -14,9 +11,7 @@ import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza4Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza5Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza6Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza7Activity
-
-//import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza7Activity
-//import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza8Activity
+import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza8Activity
 
 
 class IntentarDeNuevoActivity  : AppCompatActivity() {
@@ -30,7 +25,7 @@ class IntentarDeNuevoActivity  : AppCompatActivity() {
             //La condicional para saber a donde volver
             when (nombreActividad) {
                 "Adivinanza1Activity" -> {
-                    val actividad = Intent(this, Adivinanza7Activity::class.java)
+                    val actividad = Intent(this, Adivinanza1Activity::class.java)
                     startActivity(actividad)
                 }
 
@@ -47,6 +42,25 @@ class IntentarDeNuevoActivity  : AppCompatActivity() {
 
                 "Adivinanza4Activity" -> {
                     val actividad = Intent(this, Adivinanza4Activity::class.java)
+                    startActivity(actividad)
+
+                }
+                "Adivinanza5Activity" -> {
+                    val actividad = Intent(this, Adivinanza5Activity::class.java)
+                    startActivity(actividad)
+                }
+                "Adivinanza6Activity" -> {
+                    val actividad = Intent(this, Adivinanza6Activity::class.java)
+                    startActivity(actividad)
+
+                }
+                "Adivinanza7Activity" -> {
+                    val actividad = Intent(this, Adivinanza7Activity::class.java)
+                    startActivity(actividad)
+
+                }
+                "Adivinanza8Activity" -> {
+                    val actividad = Intent(this, Adivinanza8Activity::class.java)
                     startActivity(actividad)
 
                 }

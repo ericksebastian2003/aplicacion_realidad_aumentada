@@ -4,27 +4,22 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.ericksebas03.realidadaumentadamuseo.CameraActivity
 import com.ericksebas03.realidadaumentadamuseo.R
+import com.ericksebas03.realidadaumentadamuseo.AdivinanzaState
 
 class Adivinanza1Activity : AppCompatActivity() {
-    //Guardar en la variable nombreActivity el nombre de la actividad
-    val nombreActivity = Adivinanza1Activity::class.java.name
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_adivinanza_1)
 
-        val btnContinuar = findViewById<Button>(R.id.btn_intentar)
-
-        btnContinuar.setOnClickListener(){
-
-            val intent = Intent(this, CameraActivity::class.java)
-            //Enviar parametros
-            intent.putExtra("ACTIVITY", nombreActivity)
+        // Obtener la referencia del Button
+        val btnLectorQR: Button = findViewById(R.id.btnLectorQR)
+        AdivinanzaState.adivinanzaActiva = 1
+        // Configurar el OnClickListener para abrir el lector de QR
+        btnLectorQR.setOnClickListener {
+            // Redirigir a la actividad LectorQRActivity (usando ZXing o tu lector preferido)
+            val intent = Intent(this, com.ericksebas03.realidadaumentadamuseo.lectorqr.LectorQR ::class.java) // ZXing CaptureActivity
             startActivity(intent)
-
         }
-
     }
 }

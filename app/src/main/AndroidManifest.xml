@@ -61,10 +61,23 @@
             android:name=".adivinanzas.Adivinanza4Activity"
             android:exported="true" />
         <activity
-            android:name=".adivinanzas.Adivinanza3Activity"
+            android:name=".adivinanzas.Adivinanza5Activity"
+            android:exported="true" />
+        <activity
+            android:name=".adivinanzas.Adivinanza6Activity"
             android:exported="true" />
         <activity
             android:name=".adivinanzas.Adivinanza7Activity"
+            android:exported="true" />
+        <activity
+            android:name=".adivinanzas.Adivinanza8Activity"
+            android:exported="true" />
+
+        <activity
+            android:name=".respuestas.Respuesta1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".respuestas.Respuesta2Activity"
             android:exported="true" />
         <activity
             android:name=".respuestas.Respuesta3Activity"
@@ -72,12 +85,27 @@
         <activity
             android:name=".respuestas.Respuesta4Activity"
             android:exported="true" />
+        <activity
+            android:name=".respuestas.Respuesta5Activity"
+            android:exported="true" />
+        <activity
+            android:name=".respuestas.Respuesta6Activity"
+            android:exported="true" />
+        <activity
+            android:name=".respuestas.Respuesta7Activity"
+            android:exported="true" />
+        <activity
+            android:name=".respuestas.Respuesta8Activity"
+            android:exported="true" />
 
-        <activity android:name=".lectorqr.LectorQR" android:exported="true">
+        <activity
+            android:name=".lectorqr.LectorQR"
+            android:exported="true">
         </activity>
-        <activity android:name=".respuestas.Respuesta7Activity" android:exported="true">
+        <activity
+            android:name=".IntentarDeNuevoActivity"
+            android:exported="true">
         </activity>
-        <activity android:name=".IntentarDeNuevoActivity" android:exported="true"></activity>
 
     </application>
 

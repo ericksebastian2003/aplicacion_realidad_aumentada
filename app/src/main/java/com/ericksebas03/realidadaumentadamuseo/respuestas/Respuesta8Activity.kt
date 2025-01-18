@@ -12,7 +12,7 @@ class Respuesta8Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_respuesta7ar)
+        setContentView(R.layout.activity_respuesta8ar)
 
         sceneView = findViewById<ArSceneView>(R.id.sceneView).apply {
             this.lightEstimationMode = Config.LightEstimationMode.DISABLED
@@ -23,7 +23,7 @@ class Respuesta8Activity : AppCompatActivity() {
     private fun placeModels() {
         sceneView.planeRenderer.isVisible = false
         val models = listOf(
-            Pair("models/Tree.glb", Position(0f, 0f, 0f)),
+            Pair("models/basura.glb", Position(0f, 0f, 0f)),
         )
 
         models.forEach { (glbFileLocation, position) ->

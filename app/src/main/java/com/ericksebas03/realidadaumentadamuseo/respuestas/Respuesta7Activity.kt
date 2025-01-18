@@ -1,4 +1,3 @@
-
 package com.ericksebas03.realidadaumentadamuseo.respuestas
 import com.ericksebas03.realidadaumentadamuseo.R
 import android.os.Bundle
@@ -7,6 +6,7 @@ import com.google.ar.core.Config
 import io.github.sceneview.ar.ArSceneView
 import io.github.sceneview.ar.node.ArModelNode
 import io.github.sceneview.math.Position
+
 class Respuesta7Activity : AppCompatActivity() {
     private lateinit var sceneView: ArSceneView
 
@@ -23,7 +23,7 @@ class Respuesta7Activity : AppCompatActivity() {
     private fun placeModels() {
         sceneView.planeRenderer.isVisible = false
         val models = listOf(
-            Pair("models/Tree.glb", Position(0f, 0f, 0f)),
+            Pair("models/agua.glb", Position(0f, 0f, 0f)),
         )
 
         models.forEach { (glbFileLocation, position) ->

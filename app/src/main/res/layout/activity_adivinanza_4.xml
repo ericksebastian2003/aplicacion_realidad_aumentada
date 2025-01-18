@@ -28,7 +28,7 @@
         <TextView
             android:id="@+id/textView6"
             android:layout_width="305dp"
-            android:layout_height="275dp"
+            android:layout_height="245dp"
             android:layout_marginStart="30sp"
             android:layout_marginTop="40sp"
             android:layout_marginEnd="30sp"
@@ -53,16 +53,16 @@ No lleva lentes, pero ve,
                 android:layout_height="74dp"
                 android:src="@drawable/camara" />
 
-        </LinearLayout>
+            <Button
+                android:id="@+id/btnLectorQR"
+                android:layout_width="120dp"
+                android:layout_height="46dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/encontrar"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/btnLectorQR"
-            android:layout_width="120dp"
-            android:layout_height="46dp"
-            android:background="@drawable/rounded_button"
-            android:text="@string/encontrar"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+        </LinearLayout>
 
     </LinearLayout>
 

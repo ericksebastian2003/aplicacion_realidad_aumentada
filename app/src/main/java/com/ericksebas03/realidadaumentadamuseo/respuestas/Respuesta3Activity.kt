@@ -1,71 +1,47 @@
 package com.ericksebas03.realidadaumentadamuseo.respuestas
-
-import android.os.Bundle
-import android.speech.tts.TextToSpeech
-import android.widget.Button
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import com.ericksebas03.realidadaumentadamuseo.R
-import java.util.Locale
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.google.ar.core.Config
+import io.github.sceneview.ar.ArSceneView
+import io.github.sceneview.ar.node.ArModelNode
+import io.github.sceneview.math.Position
 
-class Respuesta3Activity : AppCompatActivity(), TextToSpeech.OnInitListener {
-
-    private lateinit var tts: TextToSpeech // Declaración correcta para TTS
-    private lateinit var textToRead: TextView // Declaración para TextView
-    private lateinit var speakerButton: Button // Declaración para el botón
+class Respuesta3Activity : AppCompatActivity() {
+    private lateinit var sceneView: ArSceneView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_respuesta3ar) // Asegúrate de usar el layout correcto
+        setContentView(R.layout.activity_respuesta3ar)
 
-        // Inicializar vistas
-        textToRead = findViewById(R.id.textToRead)
-        speakerButton = findViewById(R.id.btn_escuchar)
-        val continuar = findViewById<Button>(R.id.btn_continuar)
+        sceneView = findViewById<ArSceneView>(R.id.sceneView).apply {
+            this.lightEstimationMode = Config.LightEstimationMode.DISABLED
+        }
+        placeModels()
+    }
 
-        // Inicializar Text-To-Speech
-        tts = TextToSpeech(this, this)
+    private fun placeModels() {
+        sceneView.planeRenderer.isVisible = false
+        val models = listOf(
+            Pair("models/tortuga.glb", Position(0f, 0f, 0f)),
+        )
 
-        // Configurar el botón
-        speakerButton.setOnClickListener {
-            val text = textToRead.text.toString()
-            if (text.isNotEmpty()) {
-                speakText(text)
+        models.forEach { (glbFileLocation, position) ->
+            val modelNode = ArModelNode(sceneView.engine).apply {
+                loadModelGlbAsync(
+                    glbFileLocation = glbFileLocation,
+                    scaleToUnits = 1f,
+                    centerOrigin = position
+                )
             }
-        }
-        //Botón de continuar
-        continuar.setOnClickListener{
-            // Crear un Intent para iniciar Respuesta1Activity
-            //val intent = Intent(this, Respuesta1Activity::class.java)
-            // Iniciar Respuesta1Activity
-            //startActivity(intent)
+            // Agregar el nuevo nodo modelo a la escena
+            sceneView.addChild(modelNode)
+            modelNode.anchor()
+
         }
     }
-
-    override fun onInit(status: Int) {
-        if (status == TextToSpeech.SUCCESS) {
-            // Configurar idioma a Español - Ecuador (es-EC)
-            val result = tts.setLanguage(Locale("es", "EC"))
-            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                speakerButton.isEnabled = false
-                textToRead.text = "El idioma seleccionado no es compatible con TTS."
-            }
-        } else {
-            textToRead.text = "Error al inicializar Text-to-Speech."
-        }
-    }
-
-    private fun speakText(text: String) {
-        // Leer el texto en voz alta
-        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
-    }
-
     override fun onDestroy() {
         super.onDestroy()
-        // Detener TTS para liberar recursos
-        if (::tts.isInitialized) {
-            tts.stop()
-            tts.shutdown()
-        }
+
     }
 }

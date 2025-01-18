@@ -8,6 +8,8 @@ import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza1Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza7Activity
 
 import android.view.View
+import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza2Activity
+import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza3Activity
 
 
 class SeccionesActivity : AppCompatActivity() {
@@ -27,7 +29,7 @@ class SeccionesActivity : AppCompatActivity() {
             }
 
             section2.setOnClickListener {
-                val intent = Intent(this, Adivinanza1Activity::class.java)
+                val intent = Intent(this, Adivinanza3Activity::class.java)
                 startActivity(intent)
             }
 

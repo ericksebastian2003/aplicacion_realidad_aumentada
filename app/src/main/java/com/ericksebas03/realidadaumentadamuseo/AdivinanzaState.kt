@@ -5,13 +5,13 @@ object AdivinanzaState {
 
     // Puedes agregar más variables si necesitas almacenar información adicional
     val respuestasCorrectas = mapOf(
-        1 to "webos",
-        2 to "sol",
-        3 to "cielo",
-        4 to "rio",
-        5 to "montaña",
-        6 to "estrella",
+        1 to "trex",
+        2 to "mamut lanudo",
+        3 to "tortuga de galapagos",
+        4 to "Oso de anteojos",
+        5 to "amazonas",
+        6 to "anaconda",
         7 to "arbol",
-        8 to "mar"
+        8 to "basura"
     )
 }
