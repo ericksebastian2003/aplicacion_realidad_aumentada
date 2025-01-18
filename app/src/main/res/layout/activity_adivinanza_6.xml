@@ -27,16 +27,13 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
+            android:layout_width="324dp"
+            android:layout_height="220dp"
             android:layout_marginStart="30sp"
             android:layout_marginTop="40sp"
             android:layout_marginEnd="30sp"
             android:fontFamily="@font/pixelify_sans_bold"
-            android:text="En los Andes vive feliz,
-con manchas que parecen gris.
-No lleva lentes, pero ve,
-¿quién es este que trepa y se esconde a su vez?"
+            android:text="Soy larga y escurridiza, en el agua me deslizo, puedo estrujar con fuerza y en la selva hago mi nido"
             android:textAlignment="center"
             android:textColor="#2ECC71"
             android:textSize="28sp" />
