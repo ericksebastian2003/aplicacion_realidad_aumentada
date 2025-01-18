@@ -16,7 +16,7 @@ class Respuesta4Activity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_respuesta4) // Asegúrate de usar el layout correcto
+        setContentView(R.layout.activity_respuesta4ar) // Asegúrate de usar el layout correcto
 
         // Inicializar vistas
         textToRead = findViewById(R.id.textToRead)
