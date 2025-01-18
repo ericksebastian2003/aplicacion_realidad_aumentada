@@ -24,6 +24,10 @@ import com.google.mlkit.vision.barcode.BarcodeScanner
 import com.google.mlkit.vision.barcode.common.Barcode
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
+import com.ericksebas03.realidadaumentadamuseo.AdivinanzaState
+import com.ericksebas03.realidadaumentadamuseo.splashscreen.Splash2Activity
+import com.ericksebas03.realidadaumentadamuseo.IntentarDeNuevoActivity
+import com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta7Activity
 
 class LectorQR : AppCompatActivity() {
 
@@ -41,9 +45,23 @@ class LectorQR : AppCompatActivity() {
 
         val btngotoar: Button = findViewById(R.id.btn_gotoar)
         btngotoar.setOnClickListener {
-            // Redirigir a la actividad LectorQRActivity (usando ZXing o tu lector preferido)
-            val intent = Intent(this, com.ericksebas03.realidadaumentadamuseo.respuestas.Respuesta7Activity ::class.java) //
-            startActivity(intent)
+            // Obtener el texto del TextView
+            val scannedText = binding.resultTextView.text.toString()
+
+            // Obtener la respuesta correcta desde el singleton
+            val adivinanzaActiva = AdivinanzaState.adivinanzaActiva
+            val respuestaCorrecta = AdivinanzaState.respuestasCorrectas[adivinanzaActiva]
+
+            // Comprobar si el texto coincide con la respuesta correcta
+            if (scannedText == respuestaCorrecta) {
+                // Redirigir a la pantalla de respuesta correcta
+                val intent = Intent(this, Respuesta7Activity::class.java)
+                startActivity(intent)
+            } else {
+                // Redirigir a la pantalla de respuesta incorrecta
+                val intent = Intent(this,IntentarDeNuevoActivity::class.java)
+                startActivity(intent)
+            }
         }
 
         barcodeScanner = BarcodeScanning.getClient()

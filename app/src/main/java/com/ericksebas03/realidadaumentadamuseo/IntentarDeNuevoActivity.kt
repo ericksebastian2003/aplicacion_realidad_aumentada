@@ -13,6 +13,8 @@ import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza3Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza4Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza5Activity
 import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza6Activity
+import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza7Activity
+
 //import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza7Activity
 //import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza8Activity
 
@@ -28,7 +30,7 @@ class IntentarDeNuevoActivity  : AppCompatActivity() {
             //La condicional para saber a donde volver
             when (nombreActividad) {
                 "Adivinanza1Activity" -> {
-                    val actividad = Intent(this, Adivinanza1Activity::class.java)
+                    val actividad = Intent(this, Adivinanza7Activity::class.java)
                     startActivity(actividad)
                 }
 
