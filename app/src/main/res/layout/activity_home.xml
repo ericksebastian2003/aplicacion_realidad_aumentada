@@ -14,7 +14,7 @@
         android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido/a"
+        android:text="Bienvenido/a al Museo"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp" />
