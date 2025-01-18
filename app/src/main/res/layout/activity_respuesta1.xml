@@ -3,70 +3,110 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".respuestas.Respuesta1Activity">
+    android:background="#F8F9FA"
+    tools:context=".MainActivity">
 
+    <!-- Título principal -->
     <TextView
-        android:id="@+id/textToRead"
-        android:layout_width="389dp"
-        android:layout_height="375dp"
-        android:text="Es uno de los únicos depredadores que pueden romper la piel dura de los guanacos con su pico. Madura sexualmente tarde (mínimo a los 5 años, con algunos reportes de la primera cría a los 11 años), y solo tienen una cría cada 2-3 años. Esto los hace muy vulnerables a las amenazas."
-        android:textAlignment="center"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.287" />
-
-    <Button
-        android:id="@+id/btn_escuchar"
-        android:layout_width="64dp"
-        android:layout_height="42dp"
-        app:icon="@drawable/ic_speaker"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:text="¿Sabias qué?"
-        android:textAlignment="center"
-        android:textSize="34sp"
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tyrannosaurus Rex"
+        android:textColor="#1E8449"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#D5F5E3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Separador bajo el título -->
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B2BABB"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Contenedor del texto descriptivo -->
+
+    <io.github.sceneview.ar.ArSceneView
+        android:id="@+id/sceneView"
+        android:layout_width="380dp"
+        android:layout_height="364dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/descriptionContainer"
+        android:layout_width="374dp"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:clipToOutline="true"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/actionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator1"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/iconTree"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:contentDescription="Icono de árbol"
+            android:src="@drawable/res1"
+            android:tint="#2ECC71" />
+
+        <!-- Texto descriptivo -->
+        <TextView
+            android:id="@+id/textToRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="Es uno de los dinosaurios más icónicos, vivió hace 68-66 millones de años durante el período Cretácico tardío. Con hasta 13 metros de largo y un peso de 8 a 14 toneladas."
+            android:textColor="#34495E"
+            android:textSize="16sp" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/btn_continuar"
-        android:layout_width="286dp"
-        android:layout_height="54dp"
+        android:id="@+id/actionButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Continuar"
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#2ECC71"
+        android:textColor="#FFFFFF"
+        android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="358dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <!-- Separador inferior -->
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B2BABB"
+        app:layout_constraintBottom_toTopOf="@id/actionButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807"
-        app:srcCompat="@drawable/condor" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
