@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Los árboles son verdaderos guardianes del medio ambiente. Son los pulmones de nuestro planeta, ya que a través del proceso de fotosíntesis, absorben dióxido de carbono (CO2) y liberan oxígeno, lo que permite la vida de todos los seres vivos."
+            android:text="El agua es un recurso vital y limitado. Conservarla es fundamental para garantizar su disponibilidad para las futuras generaciones. Evitemos su desperdicio, cuidemos los ecosistemas y hagamos un esfuerzo colectivo para proteger este recurso indispensable."
             android:textColor="#34495E"
             android:textSize="16sp"
             android:lineSpacingExtra="4dp"

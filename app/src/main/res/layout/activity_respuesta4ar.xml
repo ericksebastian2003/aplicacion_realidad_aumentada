@@ -3,70 +3,110 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".respuestas.Respuesta4Activity">
+    android:background="#F8F9FA"
+    tools:context=".MainActivity">
 
+    <!-- Título principal -->
     <TextView
-        android:id="@+id/textToRead"
-        android:layout_width="389dp"
-        android:layout_height="375dp"
-        android:text="El mamut lanudo (Mammuthus primigenius) habitó regiones frías hace 400,000 y 4,000 años, siendo uno de los últimos mamuts en extinguirse. Adaptado al frío extremo, tenía un grueso pelaje, grasa corporal de 10 cm y colmillos curvados que usaba para excavar nieve y defenderse. Su extinción se atribuye a la caza humana y al cambio climático, dejando restos bien preservados en el permafrost."
-        android:textAlignment="center"
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Oso de Anteojos"
+        android:textColor="#1E8449"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
-
-    <Button
-        android:id="@+id/btn_escuchar"
-        android:layout_width="64dp"
-        android:layout_height="42dp"
-        app:icon="@drawable/ic_speaker"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="187dp"
-        android:layout_height="50dp"
-        android:text="¡Felicidades!"
-        android:textAlignment="center"
-        android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#D5F5E3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Separador bajo el título -->
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B2BABB"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Contenedor del texto descriptivo -->
+
+    <io.github.sceneview.ar.ArSceneView
+        android:id="@+id/sceneView"
+        android:layout_width="380dp"
+        android:layout_height="364dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/descriptionContainer"
+        android:layout_width="374dp"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:clipToOutline="true"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/actionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator1"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/iconTree"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:contentDescription="Icono de oso"
+            android:src="@drawable/res4"
+            android:tint="#2ECC71" />
+
+        <!-- Texto descriptivo -->
+        <TextView
+            android:id="@+id/textToRead"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="El oso de anteojos construye plataformas en los árboles para descansar o alimentarse. Es principalmente herbívoro y come pequeños animales. Sus manchas faciales son únicas, como una huella digital, y nunca se repiten."
+            android:textColor="#34495E"
+            android:textSize="16sp" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/btn_continuar"
-        android:layout_width="286dp"
-        android:layout_height="54dp"
+        android:id="@+id/actionButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Continuar"
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#2ECC71"
+        android:textColor="#FFFFFF"
+        android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="176dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="116dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <!-- Separador inferior -->
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B2BABB"
+        app:layout_constraintBottom_toTopOf="@id/actionButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        app:srcCompat="@drawable/adivinanza_pasado_2" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

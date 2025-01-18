@@ -3,70 +3,110 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".respuestas.Respuesta3Activity">
+    android:background="#F8F9FA"
+    tools:context=".MainActivity">
 
+    <!-- Título principal -->
     <TextView
-        android:id="@+id/textToRead"
-        android:layout_width="389dp"
-        android:layout_height="375dp"
-        android:text="El Tyrannosaurus rex, uno de los dinosaurios más icónicos, vivió hace 68-66 millones de años durante el período Cretácico tardío. Con hasta 13 metros de largo y un peso de 8 a 14 toneladas, fue un depredador carnívoro de gran potencia, conocido por su mordida extremadamente fuerte. Aunque sus brazos eran pequeños, estaban muy desarrollados muscularmente. Es considerado un pariente lejano de las aves modernas, lo que refuerza su importancia evolutiva."
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
-
-    <Button
-        android:id="@+id/btn_escuchar"
-        android:layout_width="64dp"
-        android:layout_height="42dp"
-        app:icon="@drawable/ic_speaker"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="209dp"
-        android:layout_height="45dp"
-        android:text="¡Felicidades!"
-        android:textAlignment="center"
-        android:textSize="34sp"
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tortuga de Galápagos"
+        android:textColor="#1E8449"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#D5F5E3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Separador bajo el título -->
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B2BABB"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Contenedor del texto descriptivo -->
+
+    <io.github.sceneview.ar.ArSceneView
+        android:id="@+id/sceneView"
+        android:layout_width="380dp"
+        android:layout_height="364dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/descriptionContainer"
+        android:layout_width="374dp"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:clipToOutline="true"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/actionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator1"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/iconTree"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:contentDescription="Icono de tortuga"
+            android:src="@drawable/res3"
+            android:tint="#2ECC71" />
+
+        <!-- Texto descriptivo -->
+        <TextView
+            android:id="@+id/textToRead"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="Las tortugas de Galápagos pueden vivir más de 175 años, dormir hasta 16 horas al día y sobrevivir un año sin comida ni agua. Además, su caparazón refleja su hábitat, y ayudan a dispersar semillas para regenerar ecosistemas."
+            android:textColor="#34495E"
+            android:textSize="16sp" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/btn_continuar"
-        android:layout_width="286dp"
-        android:layout_height="54dp"
+        android:id="@+id/actionButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Continuar"
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#2ECC71"
+        android:textColor="#FFFFFF"
+        android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="171dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="120dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <!-- Separador inferior -->
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B2BABB"
+        app:layout_constraintBottom_toTopOf="@id/actionButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.154"
-        app:srcCompat="@drawable/adivinanza_pasado_1" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
