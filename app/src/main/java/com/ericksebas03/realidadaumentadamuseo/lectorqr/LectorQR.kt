@@ -64,7 +64,7 @@ class LectorQR : AppCompatActivity() {
 
             // Comprobar si el texto coincide con la respuesta correcta
             if (scannedText == respuestaCorrecta) {
-                // Usamos when para redirigir a la pantalla correspondiente
+                // Redirigir a la actividad correcta si la respuesta es válida
                 val intent = when (adivinanzaActiva) {
                     1 -> Intent(this, Respuesta1Activity::class.java)
                     2 -> Intent(this, Respuesta2Activity::class.java)
@@ -78,8 +78,20 @@ class LectorQR : AppCompatActivity() {
                 }
                 startActivity(intent)
             } else {
-                // Redirigir a la pantalla de respuesta incorrecta
+                // Redirigir a IntentarDeNuevoActivity con el nombre de la actividad de la adivinanza
                 val intent = Intent(this, IntentarDeNuevoActivity::class.java)
+                val nombreActividad = when (adivinanzaActiva) {
+                    1 -> "Adivinanza1Activity"
+                    2 -> "Adivinanza2Activity"
+                    3 -> "Adivinanza3Activity"
+                    4 -> "Adivinanza4Activity"
+                    5 -> "Adivinanza5Activity"
+                    6 -> "Adivinanza6Activity"
+                    7 -> "Adivinanza7Activity"
+                    8 -> "Adivinanza8Activity"
+                    else -> null
+                }
+                intent.putExtra("NOMBRE_ACTIVITY", nombreActividad)
                 startActivity(intent)
             }
         }
