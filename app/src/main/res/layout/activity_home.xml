@@ -24,8 +24,8 @@
         android:id="@+id/imagensplash2"
         android:layout_width="227dp"
         android:layout_height="226dp"
-        android:src="@drawable/logo_app"
-    android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/logo_app" />
 
     <!-- Solicitud de nombre -->
     <EditText

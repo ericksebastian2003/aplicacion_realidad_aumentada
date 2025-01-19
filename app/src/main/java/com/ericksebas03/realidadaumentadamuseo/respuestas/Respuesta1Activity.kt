@@ -1,21 +1,31 @@
 package com.ericksebas03.realidadaumentadamuseo.respuestas
+import android.content.Intent
 import com.ericksebas03.realidadaumentadamuseo.R
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.ar.core.Config
 import io.github.sceneview.ar.ArSceneView
 import io.github.sceneview.ar.node.ArModelNode
 import io.github.sceneview.math.Position
-
+import com.ericksebas03.realidadaumentadamuseo.adivinanzas.Adivinanza2Activity
+import com.ericksebas03.realidadaumentadamuseo.AdivinanzaState
 class Respuesta1Activity : AppCompatActivity() {
     private lateinit var sceneView: ArSceneView
+    private lateinit var btnsegundapantalla: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AdivinanzaState.adivinanzaActiva = 0
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_respuesta1ar)
-
+        // Inicializa el botón después de configurar el layout
+        btnsegundapantalla = findViewById(R.id.actionButton)
         sceneView = findViewById<ArSceneView>(R.id.sceneView).apply {
             this.lightEstimationMode = Config.LightEstimationMode.DISABLED
+        }
+        btnsegundapantalla.setOnClickListener {
+            val intent = Intent(this,Adivinanza2Activity ::class.java)
+            startActivity(intent)
         }
         placeModels()
     }
@@ -40,6 +50,7 @@ class Respuesta1Activity : AppCompatActivity() {
 
         }
     }
+
     override fun onDestroy() {
         super.onDestroy()
 

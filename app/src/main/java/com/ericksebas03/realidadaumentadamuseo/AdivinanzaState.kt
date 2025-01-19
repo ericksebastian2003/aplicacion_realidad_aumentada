@@ -11,7 +11,7 @@ object AdivinanzaState {
         4 to "Oso de anteojos",
         5 to "amazonas",
         6 to "anaconda",
-        7 to "arbol",
+        7 to "agua",
         8 to "basura"
     )
 }
