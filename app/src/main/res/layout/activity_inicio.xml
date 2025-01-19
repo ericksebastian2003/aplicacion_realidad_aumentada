@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
 
+
     <TextView
         android:id="@+id/tituloApp"
         android:layout_width="276dp"

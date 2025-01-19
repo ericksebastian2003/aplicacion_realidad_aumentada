@@ -90,15 +90,15 @@
         android:id="@+id/actionButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Explorar más"
-        android:textSize="16sp"
         android:layout_margin="16dp"
         android:backgroundTint="#2ECC71"
-        android:textColor="#FFFFFF"
         android:elevation="6dp"
+        android:text="Continuar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Separador inferior -->
     <View

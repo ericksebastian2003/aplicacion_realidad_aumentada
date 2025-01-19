@@ -48,20 +48,18 @@
 
     <LinearLayout
         android:id="@+id/descriptionContainer"
-        android:layout_width="374dp"
-        android:layout_height="200dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:background="#FFFFFF"
-        android:clipToOutline="true"
-        android:elevation="4dp"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@id/actionButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:clipToOutline="true"
+        app:layout_constraintTop_toBottomOf="@id/sceneView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/separator1"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/actionButton">
 
         <ImageView
             android:id="@+id/iconTree"
@@ -74,15 +72,16 @@
 
         <!-- Texto descriptivo -->
         <TextView
-            android:id="@+id/textToRead"
-            android:layout_width="match_parent"
-            android:layout_height="116dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:lineSpacingExtra="4dp"
             android:text="La anaconda verde, la serpiente más grande del mundo, puede superar los 9 metros y pesar más de 200 kilos. Es experta nadadora, puede permanecer sumergida hasta 10 minutos y engulle presas grandes como caimanes enteros gracias a su mandíbula flexible."
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:textColor="#34495E"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:gravity="center" />
+
     </LinearLayout>
 
     <Button
