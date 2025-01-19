@@ -30,6 +30,7 @@
         android:layout_width="357dp"
         android:layout_height="357dp"
         android:layout_marginBottom="32dp"
+        android:fontFamily="@font/abeezee"
         android:text="Explora y aprende mientras resuelves preguntas sobre las exposiciones del museo. Busca el QR que responde a cada pregunta, gana puntos y descubre modelos 3D con datos curiosos. ¡Vive una aventura educativa interactiva y divertida!"
         android:textAlignment="center"
         android:textAllCaps="false"

@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/btnLectorQR"
+        android:id="@+id/Layout"
         android:layout_width="0dp"
         android:layout_height="523dp"
         android:background="@drawable/top_border"

@@ -43,6 +43,7 @@
         android:backgroundTint="#2ECC71"
         android:text="Comenzar"
         android:textAlignment="center"
+        android:textColorLink="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -25,6 +25,7 @@
         android:id="@+id/messageText"
         android:layout_width="366dp"
         android:layout_height="252dp"
+        android:fontFamily="@font/abeezee"
         android:text="Escanea códigos QR en el museo EPN,  responde preguntas y aprende interactuando"
         android:textAlignment="center"
         android:textColor="#2ECC71"

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/abeezee</item>
         <item>@font/konkhmer_sleokchher</item>
         <item>@font/pixelify_sans_bold</item>
     </array>

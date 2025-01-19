@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/btnLectorQR"
+        android:id="@+id/Layout2"
         android:layout_width="0dp"
         android:layout_height="523dp"
         android:background="@drawable/top_border"
@@ -39,7 +39,7 @@
             android:textSize="28sp" />
 
         <LinearLayout
-            android:id="@+id/btnLectorQR"
+            android:id="@+id/Layout"
             android:layout_width="wrap_content"
             android:layout_height="123dp"
             android:gravity="center"
@@ -52,7 +52,7 @@
                 android:src="@drawable/camara" />
 
             <Button
-                android:id="@+id/actionButton6"
+                android:id="@+id/btnLectorQR"
                 android:layout_width="129dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
